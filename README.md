@@ -4,10 +4,10 @@
 ![How EagleEye Works!](Screenshots/how.png)
 
 - EagleEye consists of two parts:
-  1. **Client** *(Written in Golang)*
+  - **Client** *(Written in Golang)*
     + **Purpose:** Capture every packet on device and extract important details in famous protocols then finally send all the collected data to the master if online!
     + **Usage:** It should be installed on each device you want to monitor (ex: employee devices for companies).
-  2. **Master**: *(Written in Python and Bootstrap)*
+  - **Master**: *(Written in Python and Bootstrap)*
     + **Purpose:** Receive every packet sent from the clients, display it organized in the GUI monitoring table, display connected devices information like current system user/system info, compare the captured data to the threats models already written before, and then finally alert the master user for possible security threats in the network as what a typical IDS system would do!
     + **Usage:** It should be running on a server on the same network as the clients (ex: a server managed by the IT department or blue hacking team for the company maybe).
 
