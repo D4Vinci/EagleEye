@@ -1,5 +1,5 @@
 # EagleEye - host-based IDS and network monitoring system
-> This is project needs a lot of work to be ready to use as it's my graduation project so it's not user-friendly, only for experienced users, beta version, and I published/made it only for educational purpose!
+> This is project needs a lot of work to be ready to use as it's my graduation project so it's not user-friendly, only for experienced users, beta version, and I published/made it only for educational purposes!
 
 ![How EagleEye Works!](Screenshots/how.png)
 
