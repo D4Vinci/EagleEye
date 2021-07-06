@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="text-secondary">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EagleEye</title>
+    <meta name="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="270x162" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="text-dark">
+    <div class="bounce animated"></div>
+    <nav class="navbar navbar-light navbar-expand-sm textsecondary bg-dark border-primary text-secondary border rounded bounce animated navigation-clean-search" style="opacity: 1;padding: 0px;margin-bottom: 10px;width: 100%;margin-left: 0px;margin-right: 0px;">
+        <div class="container"><a class="navbar-brand text-capitalize link-primary visible" data-bss-hover-animate="tada" href="#" style="padding-right: 0px;padding-left: 0px;color: var(--bs-light);">EagleEye Dashboard</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="padding-right: 0px;padding-left: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <form class="me-auto" style="margin: 0px;margin-left: 5px;">
+                    <div class="form-group mb-3"><label class="form-label" for="search-field"></label></div>
+                </form><button class="btn btn-danger active btn-sm action-button" id="exit" type="button" style="opacity: 0.60;"><strong>Close</strong></button>
+            </div>
+        </div>
+    </nav>
+    <div class="d-inline-block bounce animated" style="width: 100%;">
+        <div class="container">
+            <div class="alert alert-danger alert-dismissible" role="alert" style="position: absolute;right: 1px;top: 0;width: 30%;z-index: 999;visibility:hidden"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <h4 class="alert-heading"><strong>Alert!</strong></h4><span id="alert-body"><strong>text</strong></span>
+            </div>
+        </div>
+        <div class="container bounce animated" style="padding-right: 5px;padding-left: 5px;margin-right: 2%;margin-left: 2%;">
+            <section class="mt-4" style="margin-bottom: 20px;">
+                <div class="container-fluid" style="padding: 5px;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-header py-2">
+                                    <h3 class="text-success float-start d-md-flex">Network monitoring</h3><small class="form-text text-info">&nbsp;Data display auto-refreshed every 1 minute</small>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive table mb-0 pt-3 pe-2">
+                                        <table class="table table-striped table-hover table-bordered my-0 mydatatable" style="width:100%">
+                                            <thead class="text-nowrap">
+                                                <tr class="text-center">
+                                                    <th class="text-muted">#</th>
+                                                    <th class="text-danger"><strong>Device</strong><br></th>
+                                                    <th class="text-danger"><strong>Time</strong><br></th>
+                                                    <th class="text-danger"><strong>Protocols</strong><br></th>
+                                                    <th class="text-danger">App layer</th>
+                                                    <th class="text-danger"><strong>Source MAC</strong><br></th>
+                                                    <th class="text-danger"><strong>Destination MAC</strong><br></th>
+                                                    <th class="text-danger"><strong>Source IP</strong><br></th>
+                                                    <th class="text-danger"><strong>Destination IP</strong><br></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-nowrap">
+                                                <tr>
+                                                    <td class="text-center"></td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row" style="margin: 0px;margin-bottom: 20px;">
+                <div class="col-6 col-md-6 text-center" style="padding-right: 2px;padding-left: 2px;">
+                    <h6 class="display-5 text-center text-success float-start d-md-flex">Possible security threats</h6>
+                </div>
+                <div class="col-6 col-md-6" style="padding-right: 2px;padding-left: 2px;">
+                    <h6 class="display-5 text-center text-success float-start d-md-flex">Connected Devices</h6>
+                </div>
+            </div>
+            <div class="row bounce animated" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                <div class="col">
+                    <div class="container" style="margin: 0px;padding: 0px;">
+                        <div class="row" style="margin: 0px;">
+                            <div class="col-6 col-md-6" style="padding-right: 2px;padding-left: 2px;">
+                                <div class="list-group text-primary" id="threats-list"></div>
+                            </div>
+                            <div class="col-6 col-md-6" style="padding-right: 2px;padding-left: 2px;">
+                                <div class="list-group" id="devices-list" style="max-height: 300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bounce animated" style="width: 95%;margin-right: 0px;margin-left: 0px;">
+                <div class="col">
+                    <div style="height: 150px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
+    <script src="assets/js/DataTable---Fully-BSS-Editable.js"></script>
+    <script src="assets/js/lists-control.js"></script>
+</body>
+
+</html>
